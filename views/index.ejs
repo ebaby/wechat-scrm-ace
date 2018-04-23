@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>speed</title>
+    <link href="/stylesheets/assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/assets/fonts/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <link href="/stylesheets/assets/plugins/jstree/dist/themes/avalon/style.min.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/assets/plugins/codeprettifier/prettify.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/assets/plugins/iCheck/skins/minimal/blue.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
+    <!--[if lt IE 9]>
+        <link href="/stylesheets/assets/css/ie8.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="/stylesheets/assets/js/respond.min.js"></script>
+        <script type="text/javascript" src="/stylesheets/assets/plugins/charts-flot/excanvas.min.js"></script>
+        <script type="text/javascript" src="/stylesheets/assets/js/html5.js"></script>
+    <![endif]-->
+    <script data-main="/javascript/config" src="/javascript/libs/require.js"></script>
+
+  </head>
+  <body class="infobar-offcanvas">
+    <!-- header-->
+	  <div ui-view="header" header id="topnav" class="navbar navbar-inverse navbar-fixed-top clearfix" role="banner"></div>
+	<!--body-->
+	
+		<div id="wrapper">
+			<!--left menu start-->
+				<div class="static-sidebar-wrapper sidebar-default" ui-view="left"></div>
+			<!--left menu end-->
+
+			<!--main start-->
+			<div class="static-content-wrapper">
+			<div class="static-content" ui-view="main"></div>
+			<footer role="contentinfo" ui-view="footer"></footer>
+			</div>
+			<!--main start-->		
+	</div>
+	<script src="/stylesheets/assets/js/jquery-1.10.2.min.js"></script>
+	<!-- <script src="/stylesheets/assets/demo/demo.js"></script>
+	<script src="/stylesheets/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<script src="/stylesheets/assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<script src="/stylesheets/assets/plugins/iCheck/icheck.min.js"></script>
+	<script src="/stylesheets/assets/plugins/codeprettifier/prettify.js"></script>
+	<script src="/stylesheets/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js"></script> -->
+	<script src="/stylesheets/assets/js/bootstrap.min.js"></script>
+    <script src="/stylesheets/assets/demo/demo-switcher.js"></script>
+    <script src="/stylesheets/assets/plugins/bootstrap-switch/bootstrap-switch.js"></script> 
+    <script>
+		$(function(){
+//alert($('#leftmenu-trigger').length)
+			$('#leftmenu-trigger').on('click',function () {debugger
+				console.log()
+				//leftmenu_switchchange();
+			});
+		});
+    </script>
+  </body>
+</html>
